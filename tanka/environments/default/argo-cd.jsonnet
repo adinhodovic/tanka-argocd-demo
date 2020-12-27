@@ -32,14 +32,6 @@
                 [
                   {
                     url: 'https://github.com/adinhodovic/tanka-argocd-demo',
-                    passwordSecret: {
-                      name: 'argo-cd-git',
-                      key: 'password',
-                    },
-                    usernameSecret: {
-                      name: 'argo-cd-git',
-                      key: 'username',
-                    },
                   },
                 ],
               ),

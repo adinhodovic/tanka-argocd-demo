@@ -9,6 +9,6 @@
   echo_deployment:
     deployment.new('echo', 1, [self.echo_container]),
 
-  oauth2_proxy_service:
+  echo_service:
     $.util.serviceFor(self.echo_deployment),
 }
