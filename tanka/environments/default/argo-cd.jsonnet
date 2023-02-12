@@ -147,7 +147,6 @@
         path: 'tanka',
         targetRevision: 'HEAD',
         plugin: {
-          name: 'tanka',
           env: [
             {
               name: 'TK_ENV',
