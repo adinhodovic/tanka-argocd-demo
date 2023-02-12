@@ -1,5 +1,5 @@
 {
-  // Plugin sepcific configs
+  // Plugin specific configs
   local tankaVersion = 'v0.20.0',
   local jsonnetBundlerVersion = 'v0.5.1',
   local pluginDir = '/home/argocd/cmp-server/plugins',
@@ -13,6 +13,9 @@
         namespace: 'default',
       },
       spec: {
+        chart: 'argo-cd',
+        repoURL: 'https://argoproj.github.io/argo-helm',
+        targetRevision: '5.20.0',
         project: 'default',
         destination: {
           namespace: 'default',
@@ -85,9 +88,6 @@
               }
             ),
           },
-          chart: 'argo-cd',
-          repoURL: 'https://argoproj.github.io/argo-helm',
-          targetRevision: '5.20.0',
         },
       },
     },
