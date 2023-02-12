@@ -5,7 +5,7 @@
     "name": "environments/default"
   },
   "spec": {
-    "apiServer": "https://35.240.88.34",
+    "apiServer": "https://192.168.49.2:8443",
     "namespace": "default",
     "injectLabels": true,
     "resourceDefaults": {},
